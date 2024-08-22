@@ -3,9 +3,9 @@ import { useUserContext } from '../contexts/UserContext'
 
 const Details = () => {
 
-    const { username } = useUserContext();
+    const { username, firstname, lastname } = useUserContext();
     return (
-        <div>{username}</div>
+        <div>{username} {firstname} {lastname}</div>
     )
 }
 
